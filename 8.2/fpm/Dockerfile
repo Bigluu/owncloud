@@ -48,5 +48,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
+User 1032
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["php-fpm"]
